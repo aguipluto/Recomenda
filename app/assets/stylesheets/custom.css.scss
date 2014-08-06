@@ -1,0 +1,57 @@
+@import "bootstrap";
+@import "font-awesome";
+
+@font-face {
+  font-family: 'Museo500-Regular';
+  src: url(font_path('Museo500-Regular-webfont.eot') + '?#iefix') format('embedded-opentype'), url(font_path('Museo500-Regular-webfont.woff')) format('woff'), url(font_path('Museo500-Regular-webfont.ttf')) format('truetype'), url(font_path('Museo500-Regular-webfont.svg') + '#MuseoSans_500') format('svg');
+}
+
+body {
+  padding-top: 50px;
+  font-family: "Museo500-Regular", Helvetica, Arial, sans-serif;
+}
+
+.navbar-default {
+  font-family: "Museo500-Regular", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #4D5157;
+
+  .badge {
+    background-color: #00aeef;
+  }
+}
+
+
+
+
+.margin-xxl {
+  margin-bottom: 250px !important;
+}
+
+.margin-lg {
+  margin-bottom: 40px !important;
+}
+
+.margin-sm {
+  margin-bottom: 20px;
+}
+
+.margin-xxs {
+  margin-bottom: 3px;
+}
+
+.margin-xs {
+  margin-bottom: 10px;
+}
+
+.margin-top-xs {
+  margin-top: 10px;
+}
+
+.margin-top-sm {
+  margin-top: 20px;
+}

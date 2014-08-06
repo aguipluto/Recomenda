@@ -36,4 +36,7 @@ Rails.application.configure do
   # config.action_view.raise_on_missing_translations = true
 
   config.action_mailer.default_url_options = { host: 'localhost:3000' }
+
+  ENV['google_places'] = 'AIzaSyC8E5J6fc_Y_3Ibm-oNlLevsSksxP8jRD4'
+
 end

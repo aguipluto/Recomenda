@@ -1,0 +1,26 @@
+<% if @restaurantes %>
+    <div class="col-sm-4">
+      <% @restaurantes.each do |r| %>
+          <div class="col-sm-12">
+            <div class="col-sm-4"><img src="<%= r.icon %>" class="img-responsive"/></div>
+            <div class="col-sm-8">
+              <strong><%= r.name %></strong>
+
+              <% if r.rating %>
+                  <br/>Nota google: <%= r.rating %>,
+              <% end %>
+              <% if r.formatted_address %>
+                  <br/>
+                  <small><%= r.formatted_address %></small>
+              <% end %>
+              <%= r.vicinity %>
+              <br/>
+            </div>
+            <hr>
+          </div>
+      <% end %>
+    </div>
+    <div class="col-sm-4">
+      <%= @restaurantes.as_json %>
+    </div>
+<% end %>

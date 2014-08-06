@@ -1,0 +1,20 @@
+<div class="col-sm-4">
+  <% @friends.each do |friend| %>
+      <img src="https://graph.facebook.com/<%= friend['id'] %>/picture"/>
+      <span><%= friend['name'] %></span>
+      <hr/>
+  <% end %>
+</div>
+<div class="col-sm-4">
+  <% @restaurantes.each do |r| %>
+      <img src="<%= r.icon %>" class="img-responsive"/>
+      <strong><%= r.name %></strong><br/>
+      Nota google: <%= r.rating %>,
+      <%= r.vicinity %>
+      <br/>
+      <hr/>
+  <% end %>
+</div>
+<div class="col-sm-4">
+  <%= @restaurantes.as_json %>
+</div>
