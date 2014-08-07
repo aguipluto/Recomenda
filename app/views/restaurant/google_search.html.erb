@@ -1,0 +1,14 @@
+<h1>Búsqueda en google</h1>
+
+<%= form_tag restaurant_google_search_path, :method => 'get', class: 'form form-inline' do %>
+
+    <%= text_field_tag :search, params[:search], class: 'form-control', placeholder: 'Restaurante Desi en Granada', id: 'inputSearchGoogle' %>
+    <%= button_tag type: 'submit', class: 'btn btn-primary', name: nil do %>
+        <i class="fa fa-search"></i> Buscar
+    <% end %>
+
+<% end %>
+
+<div id="google_restaurants" class="col-sm-12">
+  <%= render 'google_restaurants' %>
+</div>

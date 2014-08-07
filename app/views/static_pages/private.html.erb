@@ -1,4 +1,8 @@
 <div class="col-sm-4">
+  <div class="col-sm-12">
+    <%= link_to 'Añadir sitio', restaurant_google_search_path, class: 'btn btn-primary btn-block' %>
+  </div>
+  <br/>
   <% @friends.each do |friend| %>
       <img src="https://graph.facebook.com/<%= friend['id'] %>/picture"/>
       <span><%= friend['name'] %></span>
